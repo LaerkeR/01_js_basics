@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let timer = 3;
+    let svar;
+    let co2UdledtIKgVedFlyrejse = timer * 109;
+    //Dette ``gør, at teksten bliver udskrevet i konsollen. Dette ${} henviser til en funktion
+    let resultat = `Ved ${timer} timers flyrejse har du udledt ${co2UdledtIKgVedFlyrejse} i kg CO2.`;
+
+    //Hvis co2udledt(..) er mindre end 100, så skal konsollen udskrive svaret "tæt på Thunberg"
+    if (co2UdledtIKgVedFlyrejse < 100) {
+      svar = " Tæt på Thunberg";
+      //Ellers hvis co2udledt(..) er mellem 100 og 200 (&& = "og (mellem to betingelser"), så skal konsollen udskrive svaret (..)
+    } else if (co2UdledtIKgVedFlyrejse > 100 && co2UdledtIKgVedFlyrejse < 200) {
+      svar = " Ja ja, du behøver ikke at melde dig ud af Å!";
+    }
+    //Ellers hvis co2udledt(..) er mellem 200 og 600, så skal konsollen udskrive svaret (..)
+    else if (co2UdledtIKgVedFlyrejse > 200 && co2UdledtIKgVedFlyrejse < 600) {
+      ressvarpons = " Det er godt for turismen i nordeuropa";
+    } else if (co2UdledtIKgVedFlyrejse > 600) {
+      svar = " Nå ja vi kan jo altid kolonisere en anden planet ...";
+    }
+    console.log(resultat + svar);
+  </script>
+</html>
